@@ -18,8 +18,8 @@ vectara = Vectara(
                 vectara_api_key="zwt_nDJrRzeXqkymaH-tptpheMyOCzm4oL_NKD9hOw"
             )
 
-summary_config = SummaryConfig(is_enabled=True, max_results=7, response_lang="spa")
-rerank_config = RerankConfig(reranker="mmr", rerank_k=50, mmr_diversity_bias=0.2)
+summary_config = SummaryConfig(is_enabled=True, max_results=5, response_lang="spa")
+rerank_config = RerankConfig(reranker="mmr", rerank_k=50, mmr_diversity_bias=0.1)
 config = VectaraQueryConfig(
     k=10, lambda_val=0.005, rerank_config=rerank_config, summary_config=summary_config
 )
@@ -27,4 +27,6 @@ config = VectaraQueryConfig(
 query_str = "Por qué los danzantes usan máscaras?"
 
 rag = vectara.as_rag(config)
-print(rag.invoke(query_str)["answer"])
+resp = rag.invoke(query_str)
+print(resp["answer"])
+print(f"Vectara FCS = {resp['fcs']}")
