@@ -16,7 +16,7 @@ cb.init(api_key="MDItMDAwMDAwMDAtNWY0OTdkODUtYjNlYy1hNjBhLTZkNjUtYmRjYzViMjNiZjc
 ira = cb.Collection(name="zoila")
  
 st.write("""
-         **Prototipo de buscador en el álbum de Zoila**
+         **Prototipo de buscador en la obra de Zoila Cáceres**
 """)
 
 query_str = st.text_input("Pregunta algo sobre la obra de Zoila Cáceres",
