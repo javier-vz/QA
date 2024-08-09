@@ -33,7 +33,7 @@ st.write("""
 
 query_str = st.chat_input("Pregunta algo sobre las festividades de Paucartambo!")
 
-rag = vectara.as_rag(config)
+rag = vectara.as_chat(config)
 resp = rag.invoke(query_str)
 
 st.write("La IA piensa que: " + resp["answer"])

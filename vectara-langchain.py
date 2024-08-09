@@ -19,7 +19,8 @@ vectara = Vectara(
             )
 
 
-summary_config = SummaryConfig(is_enabled=True, max_results=5, response_lang="spa")
+summary_config = SummaryConfig(is_enabled=True, max_results=5, response_lang="eng", prompt_name='vectara-summary-ext-24-05-sml'
+                               , citations='html', url_pattern='https://mypdf.doc/foo/{doc.id}#page={part.page}')
 rerank_config = RerankConfig(reranker="mmr", rerank_k=50, mmr_diversity_bias=0.1)
 config = VectaraQueryConfig(
     k=10, lambda_val=0.0075, rerank_config=rerank_config, summary_config=summary_config
