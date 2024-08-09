@@ -20,6 +20,6 @@ st.write("""
 """)
 
 query_str = st.text_input("Pregunta algo sobre la obra de Zoila Cáceres",
-                          value="Qué hicieron Dina cornejo y Mariana Reyes?")
+                          value="Qué hicieron Dina Cornejo y Mariana Reyes?")
 
 st.write(ira.ask(query_str))
