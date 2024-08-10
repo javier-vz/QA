@@ -22,4 +22,7 @@ st.write("""
 query_str = st.text_input("Pregunta algo sobre la obra de Zoila Cáceres",
                           value="Qué hicieron Dina Cornejo y Mariana Reyes?")
 
-st.write(ira.ask(query_str))
+answer, refs = ira.ask(query_str)
+
+st.write(answer)
+st.write(refs)
