@@ -13,7 +13,7 @@ import streamlit as st
 cb.init(api_key="MDItMDAwMDAwMDAtNWY0OTdkODUtYjNlYy1hNjBhLTZkNjUtYmRjYzViMjNiZjc0", account_id="SALTCRC6")
 
 # Create a new collection
-ira = cb.Collection(name="zoila")
+zoila = cb.Collection(name="zoila")
  
 st.write("""
          **Prototipo de buscador en la obra de Zoila Cáceres**
@@ -22,4 +22,5 @@ st.write("""
 query_str = st.text_input("Pregunta algo sobre la obra de Zoila Cáceres",
                           value="Qué hicieron Dina Cornejo y Mariana Reyes?")
 
-st.write(ira.ask(query_str))
+answer, refs = zoila.ask(query_str)
+st.write(answer)
