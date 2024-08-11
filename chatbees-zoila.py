@@ -14,6 +14,14 @@ cb.init(api_key="MDItMDAwMDAwMDAtNWY0OTdkODUtYjNlYy1hNjBhLTZkNjUtYmRjYzViMjNiZjc
 
 # Create a new collection
 zoila = cb.Collection(name="zoila")
+
+# Add custom CSS to hide the GitHub icon
+hide_github_icon = """
+#GithubIcon {
+  visibility: hidden;
+}
+"""
+st.markdown(hide_github_icon, unsafe_allow_html=True)
  
 st.write("""
          **Prototipo de sistema QA con la obra de Zoila Cáceres!** Parte del [álbum](https://repositorio.pucp.edu.pe/index/handle/123456789/64206) de Zoila Cáceres
