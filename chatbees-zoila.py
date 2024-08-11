@@ -22,5 +22,5 @@ st.write("""
 query_str = st.text_input("Pregunta algo sobre la obra de Zoila Cáceres",
                           value="Qué hicieron Dina Cornejo y Mariana Reyes?")
 
-answer, refs = zoila.ask(query_str)
+answer = zoila.ask(query_str)['answer']
 st.write(answer)
