@@ -20,7 +20,7 @@ st.write("""
 """)
 
 query_str = st.text_input("Pregunta algo sobre la obra de Zoila Cáceres",
-                          value="qué documentos hablan del matrimonio de Zoila?")
+                          value="qué documentos hablan del centro social?")
 
 answer = dict(zoila.ask(query_str))
 
