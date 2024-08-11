@@ -23,4 +23,13 @@ query_str = st.text_input("Pregunta algo sobre la obra de Zoila Cáceres",
                           value="Qué hicieron Dina Cornejo y Mariana Reyes?")
 
 answer = dict(zoila.ask(query_str))
-st.write(answer)
+
+st.write("""
+         **respuesta :)**
+""")
+st.write(answer['answer'])
+
+st.write("""
+         **referencias :)**
+""")
+st.write(answer['refs'])
