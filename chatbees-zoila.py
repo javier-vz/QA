@@ -16,10 +16,10 @@ cb.init(api_key="MDItMDAwMDAwMDAtNWY0OTdkODUtYjNlYy1hNjBhLTZkNjUtYmRjYzViMjNiZjc
 zoila = cb.Collection(name="zoila")
  
 st.write("""
-         **Prototipo de buscador en la obra de Zoila Cáceres**
+         **Prototipo de sistema QA con la obra de Zoila Cáceres**
 """)
 
-query_str = st.text_input("Pregunta algo sobre la obra de Zoila Cáceres",
+query_str = st.text_input("Pregunta algo sobre la obra de Zoila Cáceres. En lo posible, te sugerimos formular preguntas específicas.",
                           value="qué documentos hablan del centro social?")
 
 answer = dict(zoila.ask(query_str))
@@ -30,6 +30,6 @@ st.write("""
 st.write(answer['answer'])
 
 st.write("""
-         **referencias :)**
+         **referencias**
 """)
 st.write(answer['refs'])
