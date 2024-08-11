@@ -16,7 +16,7 @@ cb.init(api_key="MDItMDAwMDAwMDAtNWY0OTdkODUtYjNlYy1hNjBhLTZkNjUtYmRjYzViMjNiZjc
 zoila = cb.Collection(name="zoila")
  
 st.write("""
-         **Prototipo de sistema QA con la obra de Zoila Cáceres** Parte del álbum de Zoila Cáceres, y otros documentos, forman el conocimiento de esta 
+         **Prototipo de sistema QA con la obra de Zoila Cáceres!** Parte del álbum de Zoila Cáceres, y otros documentos, forman el conocimiento de esta 
          inteligencia artificial. 
 """)
 
