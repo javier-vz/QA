@@ -17,7 +17,7 @@ zoila = cb.Collection(name="zoila")
  
 st.write("""
          **Prototipo de sistema QA con la obra de Zoila Cáceres** Parte del [álbum](https://repositorio.pucp.edu.pe/index/handle/123456789/64206) de Zoila Cáceres
-         , la [base de datos](https://datos.pucp.edu.pe/dataset.xhtml?persistentId=hdl:20.500.12534/VDSQKG) (disponible [aquí](https://datos.pucp.edu.pe/)), entre otros documentos, forman el conocimiento de esta 
+         , la [base de datos](https://datos.pucp.edu.pe/dataset.xhtml?persistentId=hdl:20.500.12534/VDSQKG) disponible [aquí](https://datos.pucp.edu.pe/), entre otros documentos, forman el conocimiento de esta 
          inteligencia artificial. 
 """)
 
