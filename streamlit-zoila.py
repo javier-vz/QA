@@ -4,7 +4,7 @@ Created on Wed Aug  7 19:59:09 2024
 
 @author: u_humanidades
 """
-
+import streamlit as st
 from langchain_community.vectorstores import Vectara
 from langchain_community.vectorstores.vectara import (
     RerankConfig,
@@ -21,11 +21,15 @@ vectara = Vectara(
 
 summary_config = SummaryConfig(is_enabled=True, max_results=5, response_lang="spa")
 rerank_config = RerankConfig(reranker="mmr", rerank_k=50, mmr_diversity_bias=0.1)
+
+lambda_val = st.slider(
+    "elige el grado de alucinación:", value=0.05, min_value=0, max_value=1)
+
 config = VectaraQueryConfig(
-    k=10, lambda_val=0.005, rerank_config=rerank_config, summary_config=summary_config
+    k=10, lambda_val=lambda_val, rerank_config=rerank_config, summary_config=summary_config
 )
 
-import streamlit as st
+
 
 st.write("""
          **Prototipo de sistema QA con la obra de Zoila Cáceres** Parte del [álbum](https://repositorio.pucp.edu.pe/index/handle/123456789/64206) de Zoila Cáceres
