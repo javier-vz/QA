@@ -24,7 +24,7 @@ rerank_config = RerankConfig(reranker="mmr", rerank_k=50, mmr_diversity_bias=0.1
 
 
 config = VectaraQueryConfig(
-    k=10, lambda_val=0.005, rerank_config=rerank_config, summary_config=summary_config
+    k=10, lambda_val=0.0075, rerank_config=rerank_config, summary_config=summary_config
 )
 
 
