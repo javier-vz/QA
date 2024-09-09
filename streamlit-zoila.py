@@ -22,10 +22,9 @@ vectara = Vectara(
 summary_config = SummaryConfig(is_enabled=True, max_results=5, response_lang="spa")
 rerank_config = RerankConfig(reranker="mmr", rerank_k=50, mmr_diversity_bias=0.1)
 
-lambda_val = float(st.text_input("Elige el grado de alucinación:",value="0.005"))
 
 config = VectaraQueryConfig(
-    k=10, lambda_val=lambda_val, rerank_config=rerank_config, summary_config=summary_config
+    k=10, lambda_val=0.005, rerank_config=rerank_config, summary_config=summary_config
 )
 
 
