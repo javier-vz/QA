@@ -24,7 +24,7 @@ query_str = st.text_input("Pregunta algo sobre los zoológicos humanos. Además 
 answer = dict(zoila.ask(query_str))
 
 st.write("""
-         **respuesta :)**
+         **respuesta**
 """)
 st.write(answer['answer'])
 
